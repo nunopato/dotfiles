@@ -16,6 +16,9 @@ set backspace=indent,eol,start
 
 set tabstop=2 shiftwidth=2 expandtab
 
+" Make numbers visible
+set number
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
