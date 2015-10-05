@@ -2,6 +2,10 @@
 
 let mapleader = "\<Space>"
 
+" split vimrc and source vimrc
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
 set nocompatible
 set noswapfile
 
