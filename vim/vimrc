@@ -1,0 +1,35 @@
+"  If you don't understand a setting in here, just type ':h setting'.
+
+set nocompatible
+set noswapfile
+
+filetype off
+
+" Make backspace behave in a sane manner.
+set backspace=indent,eol,start
+
+set tabstop=2 shiftwidth=2 expandtab
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+
+" Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
+
+syntax on
+
+" And plugins too.
+filetype plugin plugin on
+
+" Load colorscheme
+set background=dark
+colorscheme solarized
