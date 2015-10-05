@@ -1,5 +1,7 @@
 "  If you don't understand a setting in here, just type ':h setting'.
 
+let mapleader = "\<Space>"
+
 set nocompatible
 set noswapfile
 
