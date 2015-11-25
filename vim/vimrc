@@ -27,6 +27,11 @@ set relativenumber
 set incsearch
 set hlsearch
 
+" case insensitive pattern matching
+set ignorecase
+" overrides ignorecase if patten matching contains spaces
+set smartcase
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
