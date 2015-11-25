@@ -8,6 +8,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 
 map <leader>d obinding.pry<esc>:w<cr>
 map <leader>i mmgg=G'm
+map <leader>h :nohlsearch<cr>
 
 set nocompatible
 set noswapfile
@@ -20,7 +21,11 @@ set backspace=indent,eol,start
 set tabstop=2 shiftwidth=2 expandtab
 
 " Make numbers visible
-set number
+set relativenumber
+
+" highlight while searching and keep it there after the search
+set incsearch
+set hlsearch
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
