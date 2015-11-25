@@ -6,7 +6,8 @@ let mapleader = "\<Space>"
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 
-map <Leader>d obinding.pry<esc>:w<cr>
+map <leader>d obinding.pry<esc>:w<cr>
+map <leader>i mmgg=G'm
 
 set nocompatible
 set noswapfile
